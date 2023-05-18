@@ -7,7 +7,7 @@ function App() {
   function generar(longitud) {
     var contraFinal = "";
     var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    for (let index = 0; index <= longitud; index++) {
+    for (let index = 0; index < longitud; index++) {
       contraFinal += chars.charAt(Math.floor(Math.random() * chars.length - 1))
     }
     setContra(contraFinal);
